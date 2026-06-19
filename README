@@ -7,7 +7,9 @@ This project demonstrates how Python and pandas can be used to clean and report 
 The dataset simulates a small business operations file containing client job records. The original spreadsheet included duplicate rows, missing values, inconsistent formatting, messy column names and mixed date formats.
 
 The goal was to turn the messy spreadsheet into a clean, structured Excel file and create a simple business report with useful summary insights.
+## Business Outcome
 
+The messy dataset was reduced from 130 rows to 100 clean records, with duplicates removed, missing critical values handled, dates standardised and a multi-sheet Excel report created for business review.
 ## Before and After
 
 ### Messy Dataset
@@ -69,7 +71,9 @@ The original dataset contained:
 
 The final cleaned dataset contained:
 
-* 100 clean records
+* Original dataset: 130 rows
+* Final cleaned dataset: 100 clean records
+* Rows removed during cleaning: 30
 * 0 duplicate rows
 * 0 missing critical values
 * Clean column names
