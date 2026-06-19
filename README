@@ -1,2 +1,119 @@
-# client-operations-data-cleaning-report
-Python and pandas project cleaning a messy Excel operations dataset and creating a multi-sheet business report.
+# Client Operations Data Cleaning & Reporting Project
+
+## Project Overview
+
+This project demonstrates how Python and pandas can be used to clean and report on a messy Excel dataset.
+
+The dataset simulates a small business operations file containing client job records. The original spreadsheet included duplicate rows, missing values, inconsistent formatting, messy column names and mixed date formats.
+
+The goal was to turn the messy spreadsheet into a clean, structured Excel file and create a simple business report with useful summary insights.
+
+## Before and After
+
+### Messy Dataset
+
+![Messy dataset screenshot](before_screenshot.png)
+
+### Cleaned Dataset
+
+![Cleaned dataset screenshot](after_screenshot.png)
+
+### Summary Report
+
+![Summary report screenshot](report_summary_screenshot.png)
+
+## Tools Used
+
+* Python
+* pandas
+* Google Colab
+* Excel
+
+## Problems in the Original Data
+
+The original dataset contained:
+
+* Messy column names with extra spaces
+* Duplicate rows
+* Missing customer names
+* Missing hours worked
+* Missing hourly rates
+* Missing dates
+* Missing payment statuses
+* Inconsistent capitalisation
+* Extra spaces in text fields
+* Mixed date formats
+* No earnings column
+
+## Cleaning Steps Completed
+
+1. Loaded the messy Excel file into pandas.
+2. Inspected the dataset structure using `df.info()`.
+3. Checked missing values using `df.isna().sum()`.
+4. Checked duplicate rows using `df.duplicated().sum()`.
+5. Created a before-cleaning data quality report.
+6. Cleaned column names by removing spaces, converting to lowercase and replacing spaces with underscores.
+7. Removed duplicate rows.
+8. Cleaned text formatting across customer names, business types, service types, payment statuses and regions.
+9. Removed rows missing critical values.
+10. Standardised mixed date formats.
+11. Added an earnings column.
+12. Created summary results.
+13. Grouped earnings by service.
+14. Grouped earnings by region.
+15. Created a payment status summary.
+16. Exported a cleaned Excel file.
+17. Exported a multi-sheet Excel report.
+
+## Results
+
+The final cleaned dataset contained:
+
+* 100 clean records
+* 0 duplicate rows
+* 0 missing critical values
+* Clean column names
+* Standardised text formatting
+* Standardised date formatting
+* A new earnings column
+
+Business summary:
+
+* Total earnings: £12,029.60
+* Highest earning service: Data Entry
+
+## Final Outputs
+
+* `messy_client_operations_data.xlsx` — original messy dataset
+* `cleaned_client_operations_data.xlsx` — cleaned Excel output
+* `client_operations_cleaning_report.xlsx` — multi-sheet Excel report
+* `Client_Operations_Data_Cleaning_Report_Project.ipynb` — Python notebook showing the full workflow
+* `before_screenshot.png` — screenshot of the messy dataset
+* `after_screenshot.png` — screenshot of the cleaned dataset
+* `report_summary_screenshot.png` — screenshot of the summary report
+
+## Skills Demonstrated
+
+* Excel data cleaning
+* Data quality checks
+* Duplicate removal
+* Missing value handling
+* Text standardisation
+* Date standardisation
+* Calculated columns
+* Business summary reporting
+* Group-by analysis
+* Multi-sheet Excel report exporting
+* Python and pandas workflow
+
+## Freelance Relevance
+
+This project is similar to real freelance tasks where clients need help cleaning messy Excel or CSV files, removing duplicates, fixing formatting issues, standardising dates and creating simple summary reports.
+
+It supports services such as:
+
+* Excel/CSV data cleaning
+* Spreadsheet organisation
+* Data quality checks
+* Basic business reporting
+* Multi-sheet Excel report creation
